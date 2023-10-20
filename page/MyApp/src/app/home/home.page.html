@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="center-container">
+    <ion-card color="warning">
+      <ion-card-header>
+        <ion-card-title>Iniciar sesión</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list [inset]="true">
+          <ion-item>
+            <ion-label position="floating">Usuario</ion-label>
+            <ion-input type="text" [(ngModel)]="user.username"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+      <div style="text-align: center;">
+        <ion-checkbox> <font size="4">Recuerdame</font></ion-checkbox><br>
+      </div><br>
+      <div style="text-align: center;">
+        <ion-label>
+          <a (click)="recuperar()">Olvide mi contraseña</a>
+        </ion-label>
+      </div>
+      <ion-button expand="block" (click)="login()" color="medium">Iniciar sesion</ion-button>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer class="footer">
+  <img src="assets/images/duoclogo.png" alt="">
+</ion-footer>

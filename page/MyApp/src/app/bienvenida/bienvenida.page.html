@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-back-button>Volver</ion-back-button>
+  </ion-buttons>
+</ion-header>
+<br><br>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bienvenido,
+        <br><br>
+        <p style="color: greenyellow;">{{ user.username }}</p>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <mat-spinner></mat-spinner>
+  </ion-card>
+    <img src="assets/images/duoclogo.png" alt="">
+</ion-content>
+
+
+
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="library">
+      <ion-icon name="library"></ion-icon>
+      Documentos
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      Search
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
